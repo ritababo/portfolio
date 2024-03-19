@@ -1,10 +1,53 @@
-body {
+:root {
+  --primary-color: #7978c0;
+  --secondary-color: #ddb4bd;
+  --default-text-color: #546780;
+  --headings-font: "DM Serif Display", serif;
+  --default-font: "Inconsolata", monospace;
 }
 
+@media (max-width: 992px) {
+  .h1-lg {
+    font-size: 46px !important;
+  }
+  .h2-lg {
+    font-size: 35px !important;
+  }
+}
+
+/* body {
+} */
+
 h1 {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--headings-font);
 }
 
 h2 {
-  font-family: "Inconsolata", monospace;
+  font-family: var(--default-font);
+}
+
+p {
+  font-family: var(--default-font);
+  font-size: 16px;
+  color: var(--default-text-color);
+}
+
+.hero {
+  background: #f4f2e9;
+  padding: 60px 40px;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 64px;
+}
+
+.hero h2 {
+  color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.hero p {
+  font-size: 14px;
 }
